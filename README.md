@@ -152,3 +152,7 @@ Complete the launch and verify access through the NAT Gateway and communication 
 ![2](https://github.com/mdsolutionsintech/KC_Task_5/assets/170469142/8d08d198-9984-4836-bfa0-c4f7800754e2)
 ![1](https://github.com/mdsolutionsintech/KC_Task_5/assets/170469142/0fd1c7cd-eb65-4286-a142-258e85b70ec9)
 ![26a](https://github.com/mdsolutionsintech/KC_Task_5/assets/170469142/5efeadab-37e3-4115-a215-abf8af31669f)
+
+# Architecture Diagram and Explanations:
+
+![A](https://github.com/mdsolutionsintech/KC_Task_5/assets/170469142/e99c1661-c273-4cce-bc79-4bc1f8259b23)
