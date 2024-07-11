@@ -22,7 +22,7 @@ IPv4 CIDR block: 10.0.2.0/24
 AZ: do as Public Subnet 
 Click Create.
 
-### 3: Configuring Internet Gateway (IGW)
+## 3: Configuring Internet Gateway (IGW)
 Creating and Attaching an IGW:
 Click on Internet Gateways.
 Click Create internet gateway.
@@ -32,7 +32,7 @@ Select the created IGW, click Actions and Attach to VPC.
 VPC: Select KCVPC
 Click Attach.
 
-#### 4: Route Tables Configuring
+## 4: Route Tables Configuring
 Create a Public Route Table:
 Click on Route Tables.
 Click Create route table.
@@ -59,7 +59,7 @@ Select PrivateRouteTable, click Subnet Associations tab and Edit subnet associat
 Select PrivateSubnet
 Click Save.
 
-##### 5: Set up NAT Gateway
+## 5: Set up NAT Gateway
 Create a NAT Gateway:
 Click on NAT Gateways.
 Click Create NAT gateway.
@@ -73,7 +73,7 @@ Destination: 0.0.0.0/0
 Target: Select the NAT Gateway
 Click Save routes.
 
-####### 6: Security Groups
+## 6: Security Groups
 Create Public Security Group:
 Open the EC2 console.
 click Security Groups.
@@ -91,7 +91,7 @@ Add inbound rule for MySQL (3306) from PublicSubnet.
 Add outbound rule to allow all traffic.
 Click Create.
 
-####### 7: Configure Network ACLs
+## 7: Configure Network ACLs
 Create Public Subnet NACL:
 Click on Network ACLs in the VPC console.
 Click "Create network ACL".
@@ -114,7 +114,7 @@ Add inbound rules to allow traffic from PublicSubnet.
 Add outbound rules to allow traffic to PublicSubnet and the internet.
 Associate to PrivateSubnet.
 
-######## 8: Deploy Instances
+## 8: Deploy Instances
 Launch Public Instance:
 Open the EC2 console.
 Click Launch Instance.
@@ -123,7 +123,9 @@ Complete the launch and verify access via the internet.
 Launch Private Instance:
 Click Launch Instance.
 Configure instance details; select PrivateSubnet and assign PrivateSG.
-Complete the launch and verify access through the NAT Gateway and communication with the public instance.![26](https://github.com/mdsolutionsintech/KC_Task_5/assets/170469142/d97cf63e-639b-4b6f-98df-2dbabf509aaf)
+Complete the launch and verify access through the NAT Gateway and communication with the public instance.
+
+![26](https://github.com/mdsolutionsintech/KC_Task_5/assets/170469142/d97cf63e-639b-4b6f-98df-2dbabf509aaf)
 ![25](https://github.com/mdsolutionsintech/KC_Task_5/assets/170469142/db59f72b-f6c0-412d-905d-8a8eb87397ad)
 ![24](https://github.com/mdsolutionsintech/KC_Task_5/assets/170469142/ce3ff18c-a505-4438-900d-374fab0b45f4)
 ![23](https://github.com/mdsolutionsintech/KC_Task_5/assets/170469142/8948fd92-cf13-4c16-8b4b-00ddff09715e)
